@@ -89,7 +89,7 @@ defmodule AbsintheConstraints.Phase do
   end
 
   defp handle_constraint(config, value, node) do
-    Validator.handle_constraint(config, value)
+    Validator.handle_constraint(config, value, node)
     |> make_errors(node)
   end
 
