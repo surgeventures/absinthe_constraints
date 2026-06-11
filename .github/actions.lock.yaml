@@ -1,23 +1,23 @@
 version: 1
-generated_at: 2026-05-25T15:51:29Z
+generated_at: 2026-06-11T15:33:14Z
 internal: []
 trusted:
   - action: actions/cache
     refs:
-      - v2
-      - v3
+      - 6f8efc29b200d32929f49075959781ed54ec270c
+      - 8492260343ad570701412c2f464a5877dc76bace
     occurrences:
-      v2:
+      8492260343ad570701412c2f464a5877dc76bace:
         .github/workflows/elixir.yml:
           - jobs.test.steps.[2].uses
-      v3:
+      6f8efc29b200d32929f49075959781ed54ec270c:
         .github/workflows/elixir.yml:
           - jobs.test.steps.[7].uses
   - action: actions/checkout
     refs:
-      - v2
+      - ee0669bd1cc54295c223e0bb666b733df41de1c5
     occurrences:
-      v2:
+      ee0669bd1cc54295c223e0bb666b733df41de1c5:
         .github/workflows/elixir.yml:
           - jobs.test.steps.[0].uses
 external:
