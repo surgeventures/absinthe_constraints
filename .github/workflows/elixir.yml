@@ -52,7 +52,7 @@ jobs:
           otp-version: ${{ matrix.otp }}
 
       - name: Restore deps cache
-        uses: actions/cache@8492260343ad570701412c2f464a5877dc76bace # v2
+        uses: step-security/runs-on-cache@c5b0cba15d05488ebc630ad8d1e95b3d9b35ac73 # v5.0.7
         with:
           path: |
             deps
@@ -80,7 +80,7 @@ jobs:
           mix test
 
       - name: Cache/uncache PLTs
-        uses: actions/cache@6f8efc29b200d32929f49075959781ed54ec270c # v3
+        uses: step-security/runs-on-cache@c5b0cba15d05488ebc630ad8d1e95b3d9b35ac73 # v5.0.7
         with:
           path: |
             priv/plts
